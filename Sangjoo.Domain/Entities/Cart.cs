@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sangjoo.Domain.Entities;
+
+public class Cart : BaseEntity
+{
+    public long UserId { get; set; }
+
+    public ApplicationUser User { get; set; }
+
+    public ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+    public string? CouponCode { get; set; }
+    public decimal DiscountAmount { get; set; }
+}

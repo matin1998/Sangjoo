@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -518,14 +518,35 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\images\products\big\" />
+    <Folder Include="wwwroot\images\products\medium\" />
+    <Folder Include="wwwroot\images\products\thumb\" />
+    <Folder Include="wwwroot\images\products\small\" />
     <Folder Include="wwwroot\WebsiteTemplate\node_modules\%40isaacs\" />
   </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="SixLabors.ImageSharp" Version="3.1.11" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="7.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sangjoo.Application\Sangjoo.Application.csproj" />
+    <ProjectReference Include="..\Sangjoo.Domain\Sangjoo.Domain.csproj" />
+    <ProjectReference Include="..\Sangjoo.Infrustructure\Sangjoo.Infrustructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,537 @@
+﻿<section dir="rtl" class="py-5">
+    <div class="container mx-auto px-4">
+
+        <!-- Breadcrumb -->
+        <nav class="w-full py-3" aria-label="مسیر صفحه">
+            <ol class="flex flex-wrap items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400">
+                <li><a href="/" class="hover:text-primary transition-colors">خانه</a></li>
+                <li aria-hidden="true" class="text-gray-400">/</li>
+                <li><a href="/Stones" class="hover:text-primary transition-colors">فروشگاه سنگ</a></li>
+                <li aria-hidden="true" class="text-gray-400">/</li>
+                <li><a href="/Stones?type=marble" class="hover:text-primary transition-colors">سنگ مرمریت</a></li>
+                <li aria-hidden="true" class="text-gray-400">/</li>
+                <li aria-current="page" class="max-w-full truncate text-gray-500 dark:text-gray-400">مرمریت دهبید کرم</li>
+            </ol>
+        </nav>
+
+
+        <!-- Main product panel -->
+        <section class="py-5" dir="rtl">
+            <div class="container">
+
+                <div class="bg-white dark:bg-custom-dark dark:text-gray-200
+                    space-y-3 shadow-sm border border-gray-200
+                    dark:border-gray-700 mt-4 rounded-2xl px-4 py-5 sm:px-6">
+
+                    <div class="grid grid-cols-12 gap-4 items-start">
+
+                        <!-- Gallery -->
+                        <section class="xl:col-span-4 col-span-12 mt-3 pb-5 w-full">
+
+                            <!-- Gallery actions -->
+                            <div class="flex justify-end mb-4">
+                                <div class="flex rounded-2xl px-2 bg-gray-100
+                                    dark:bg-zinc-800 gap-2">
+
+                                    <!-- Share -->
+                                    <button type="button"
+                                            class="flex group relative items-center justify-center p-2
+                                           rounded transition hover:text-primary"
+                                            aria-label="اشتراک‌گذاری محصول">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none" viewBox="0 0 24 24"
+                                             stroke-width="1.5" stroke="currentColor"
+                                             class="size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                                        </svg>
+                                        <span class="absolute text-nowrap z-50 top-full mt-2
+                                             hidden group-hover:block bg-gray-900
+                                             text-white text-xs py-1 px-2 rounded-md">
+                                            اشتراک‌گذاری
+                                        </span>
+                                    </button>
+
+                                    <!-- Favorite: UI only -->
+                                    <button type="button"
+                                            class="flex group relative items-center justify-center p-2
+                                           rounded transition hover:text-red-500"
+                                            aria-label="افزودن به علاقه‌مندی‌ها">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none" viewBox="0 0 24 24"
+                                             stroke-width="1.5" stroke="currentColor"
+                                             class="size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                        </svg>
+                                        <span class="absolute text-nowrap z-50 top-full mt-2
+                                             hidden group-hover:block bg-gray-900
+                                             text-white text-xs py-1 px-2 rounded-md">
+                                            افزودن به علاقه‌مندی‌ها
+                                        </span>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            <!-- Main image gallery -->
+                            <div class="bg-primary relative mb-5 rounded-[15px]
+                                h-[350px] pt-5 px-4 pb-8
+                                dark:bg-custom-dark dark:border dark:border-gray-700">
+
+                                <div class="swiper" id="stoneGalleryMain">
+                                    <div class="swiper-wrapper"
+                                         style="padding-bottom: 20px !important;">
+
+                                        <div class="swiper-slide">
+                                            <div class="border h-80 border-gray-300 rounded-lg
+                                                bg-white dark:bg-zinc-800 dark:border-gray-700">
+                                                <div class="swiper-zoom-container">
+                                                    <img src="/images/stones/dehbid-marble-main.jpg"
+                                                         alt="سنگ مرمریت دهبید کرم"
+                                                         class="rounded-lg h-72 max-w-full mx-auto object-contain"
+                                                         onerror="this.style.display='none'">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="border h-80 border-gray-300 rounded-lg
+                                                bg-white dark:bg-zinc-800 dark:border-gray-700">
+                                                <div class="swiper-zoom-container">
+                                                    <img src="/images/stones/dehbid-marble-2.jpg"
+                                                         alt="تصویر دوم سنگ مرمریت دهبید"
+                                                         class="rounded-lg h-72 max-w-full mx-auto object-contain"
+                                                         onerror="this.style.display='none'">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="border h-80 border-gray-300 rounded-lg
+                                                bg-white dark:bg-zinc-800 dark:border-gray-700">
+                                                <div class="swiper-zoom-container">
+                                                    <img src="/images/stones/dehbid-marble-3.jpg"
+                                                         alt="تصویر سوم سنگ مرمریت دهبید"
+                                                         class="rounded-lg h-72 max-w-full mx-auto object-contain"
+                                                         onerror="this.style.display='none'">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-button-prev xl:flex hidden bg-gray-100
+                                        rounded-xl dark:bg-zinc-800 border
+                                        border-gray-200 dark:border-gray-700
+                                        !size-10 after:!text-lg px-2 after:text-primary"
+                                         aria-label="تصویر قبلی"></div>
+
+                                    <div class="swiper-button-next xl:flex hidden bg-gray-100
+                                        rounded-xl dark:bg-zinc-800 border
+                                        border-gray-200 dark:border-gray-700
+                                        !size-10 after:!text-lg px-2 after:text-primary"
+                                         aria-label="تصویر بعدی"></div>
+
+                                    <div class="swiper-pagination !bottom-5"></div>
+                                </div>
+                            </div>
+
+                            <!-- Thumbnail gallery -->
+                            <div class="swiper" id="stoneGalleryThumbs">
+                                <div class="swiper-wrapper"
+                                     style="padding-bottom: 0 !important;">
+
+                                    <div class="swiper-slide">
+                                        <div class="rounded-lg flex justify-center cursor-pointer
+                                            border border-gray-300 h-20 sm:h-24 p-2
+                                            dark:border-gray-700 dark:bg-zinc-800">
+                                            <img src="/images/stones/dehbid-marble-main.jpg"
+                                                 alt="نمای اصلی سنگ"
+                                                 class="h-full max-w-full object-contain"
+                                                 onerror="this.style.display='none'">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="rounded-lg flex justify-center cursor-pointer
+                                            border border-gray-300 h-20 sm:h-24 p-2
+                                            dark:border-gray-700 dark:bg-zinc-800">
+                                            <img src="/images/stones/dehbid-marble-2.jpg"
+                                                 alt="نمای دوم سنگ"
+                                                 class="h-full max-w-full object-contain"
+                                                 onerror="this.style.display='none'">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="rounded-lg flex justify-center cursor-pointer
+                                            border border-gray-300 h-20 sm:h-24 p-2
+                                            dark:border-gray-700 dark:bg-zinc-800">
+                                            <img src="/images/stones/dehbid-marble-3.jpg"
+                                                 alt="نمای سوم سنگ"
+                                                 class="h-full max-w-full object-contain"
+                                                 onerror="this.style.display='none'">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <!-- Stone description and specifications -->
+                        <section class="xl:col-span-5 col-span-12 mt-3 pb-5
+                                w-full dark:text-gray-200">
+
+                            <!-- Category -->
+                            <ul class="flex flex-wrap items-center gap-2 text-sm">
+                                <li>
+                                    <a href="/shop" class="text-primary hover:underline">
+                                        فروشگاه سنگ
+                                    </a>
+                                </li>
+                                <li class="text-gray-400">/</li>
+                                <li>
+                                    <span class="text-primary">مرمریت</span>
+                                </li>
+                            </ul>
+
+                            <!-- Title -->
+                            <div class="space-y-2 mt-3 pb-4 border-b
+                                border-gray-300 dark:border-gray-700">
+
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="text-xs font-bold px-3 py-1 rounded-full
+                                         bg-primary/10 text-primary">
+                                        مرمریت
+                                    </span>
+
+                                    <span class="text-xs font-bold px-3 py-1 rounded-full
+                                         bg-green-100 text-green-700
+                                         dark:bg-green-900/30 dark:text-green-400">
+                                        موجودی نیازمند استعلام
+                                    </span>
+                                </div>
+
+                                <h1 class="font-black text-xl leading-9">
+                                    سنگ مرمریت دهبید کرم
+                                </h1>
+
+                                <p class="text-sm text-gray-500 dark:text-gray-400 leading-7">
+                                    سنگ مرمریت دهبید با زمینه کرم، مناسب برای استفاده در
+                                    کف‌پوش و دیوار فضاهای داخلی و پروژه‌های ساختمانی.
+                                </p>
+                            </div>
+
+                            <!-- Price -->
+                            <div class="mt-5 p-4 rounded-xl bg-gray-100
+                                dark:bg-zinc-800">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                    قیمت هر متر مربع
+                                </p>
+
+                                <div class="flex flex-wrap items-baseline gap-2">
+                                    <span class="text-2xl font-black text-primary">
+                                        ۱,۲۵۰,۰۰۰
+                                    </span>
+                                    <span class="text-sm font-bold">تومان</span>
+                                </div>
+
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                                    قیمت نهایی با توجه به ابعاد، ضخامت و موجودی قابل استعلام است.
+                                </p>
+                            </div>
+
+                            <!-- Color -->
+                            <div class="mt-6 space-y-3">
+                                <h2 class="font-bold text-lg">رنگ سنگ</h2>
+
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <div class="flex items-center gap-2 rounded-full
+                                        border-2 border-primary px-3 py-2">
+                                        <span class="size-4 rounded-full border border-gray-300
+                                             bg-amber-100"></span>
+                                        <span class="text-sm">کرم</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Features -->
+                            <div class="mt-7 space-y-3">
+                                <h2 class="font-bold text-lg">ویژگی‌ها و مشخصات</h2>
+
+                                <div class="grid gap-3 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1">
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            نوع سنگ
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">مرمریت</p>
+                                    </div>
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            ضخامت
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">۲ سانتی‌متر</p>
+                                    </div>
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            معدن
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">دهبید</p>
+                                    </div>
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            نوع فرآوری
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">صیقلی</p>
+                                    </div>
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            حداقل طول
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">۱۲۰ سانتی‌متر</p>
+                                    </div>
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            حداکثر طول
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">۱۸۰ سانتی‌متر</p>
+                                    </div>
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            حداقل عرض
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">۴۰ سانتی‌متر</p>
+                                    </div>
+
+                                    <div class="p-3 bg-gray-100 dark:bg-zinc-800 rounded-lg">
+                                        <h3 class="text-xs text-gray-500 dark:text-gray-400">
+                                            حداکثر عرض
+                                        </h3>
+                                        <p class="mt-3 text-sm font-bold">۶۰ سانتی‌متر</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Applications -->
+                            <div class="mt-7 space-y-3">
+                                <h2 class="font-bold text-lg">کاربردهای سنگ</h2>
+
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="text-sm px-3 py-2 rounded-lg
+                                         bg-gray-100 dark:bg-zinc-800">
+                                        کف‌پوش داخلی
+                                    </span>
+
+                                    <span class="text-sm px-3 py-2 rounded-lg
+                                         bg-gray-100 dark:bg-zinc-800">
+                                        دیوار داخلی
+                                    </span>
+
+                                    <span class="text-sm px-3 py-2 rounded-lg
+                                         bg-gray-100 dark:bg-zinc-800">
+                                        لابی
+                                    </span>
+
+                                    <span class="text-sm px-3 py-2 rounded-lg
+                                         bg-gray-100 dark:bg-zinc-800">
+                                        فضاهای تجاری
+                                    </span>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <!-- Single seller panel -->
+                        <aside class="xl:col-span-3 col-span-12 mt-3 w-full">
+
+                            <div class="border border-gray-200 dark:border-gray-700
+                                rounded-2xl p-4 sm:p-5
+                                bg-white dark:bg-zinc-800">
+
+                                <h2 class="font-black text-lg pb-4 border-b
+                                   border-gray-200 dark:border-gray-700">
+                                    اطلاعات فروشنده
+                                </h2>
+
+                                <!-- Seller identity -->
+                                <div class="flex items-center gap-3 py-5">
+                                    <div class="size-14 shrink-0 rounded-full
+                                        flex items-center justify-center
+                                        bg-primary/10 text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none" viewBox="0 0 24 24"
+                                             stroke-width="1.5" stroke="currentColor"
+                                             class="size-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M3.75 21h16.5M4.5 3.75h15A1.5 1.5 0 0 1 21 5.25v13.5H3V5.25a1.5 1.5 0 0 1 1.5-1.5ZM9 21v-4.5h6V21M7.5 8.25h.008v.008H7.5V8.25Zm4.5 0h.008v.008H12V8.25Zm4.5 0h.008v.008H16.5V8.25ZM7.5 12h.008v.008H7.5V12Zm4.5 0h.008v.008H12V12Zm4.5 0h.008v.008H16.5V12Z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="min-w-0">
+                                        <h3 class="font-bold text-sm leading-6">
+                                            بازرگانی نمونه سنگ
+                                        </h3>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                                            فروشنده این محصول
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Seller details -->
+                                <div class="space-y-4 text-sm">
+
+                                    <div class="flex items-start justify-between gap-3">
+                                        <span class="text-gray-500 dark:text-gray-400">
+                                            استان
+                                        </span>
+                                        <span class="font-bold">فارس</span>
+                                    </div>
+
+                                    <div class="flex items-start justify-between gap-3">
+                                        <span class="text-gray-500 dark:text-gray-400">
+                                            محل نگهداری
+                                        </span>
+                                        <span class="font-bold">انبار</span>
+                                    </div>
+
+                                    <div class="flex items-start justify-between gap-3">
+                                        <span class="text-gray-500 dark:text-gray-400">
+                                            وضعیت موجودی
+                                        </span>
+                                        <span class="font-bold text-amber-600">
+                                            نیازمند استعلام
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <!-- Inquiry -->
+                                <div class="mt-6 pt-5 border-t border-gray-200
+                                    dark:border-gray-700">
+
+                                    <p class="text-xs text-gray-500 dark:text-gray-400
+                                      leading-6 mb-4">
+                                        برای اطلاع از موجودی دقیق، قیمت روز و شرایط ارسال
+                                        با فروشنده تماس بگیرید.
+                                    </p>
+
+                                    <a href="#inquiry"
+                                       class="flex items-center justify-center gap-2
+                                      w-full py-3 px-4 rounded-xl
+                                      bg-primary text-white font-bold
+                                      hover:opacity-90 transition">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none" viewBox="0 0 24 24"
+                                             stroke-width="1.5" stroke="currentColor"
+                                             class="size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 21h-15a2.25 2.25 0 0 1-2.25-2.25V6.75Z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="m3 5.25 9 7.5 9-7.5" />
+                                        </svg>
+
+                                        درخواست استعلام
+                                    </a>
+                                </div>
+
+                            </div>
+                        </aside>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Main product panel -->
+
+        <!-- Details -->
+        <section class="mt-6 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-custom-dark md:p-7">
+            <h2 class="border-b border-gray-200 pb-4 text-xl font-black text-gray-900 dark:border-gray-700 dark:text-white">معرفی و توضیحات سنگ</h2>
+            <div class="max-w-4xl space-y-4 pt-4 text-sm leading-8 text-gray-700 dark:text-gray-300">
+                <p>مرمریت دهبید کرم با زمینه روشن و ظاهر یکدست، یکی از گزینه‌های قابل بررسی برای استفاده در فضاهای داخلی ساختمان است. انتخاب نهایی باید بر اساس سورت واقعی، میزان رگه‌ها، کیفیت فرآوری و شرایط محل اجرا انجام شود.</p>
+                <p>تصاویر، قیمت و مشخصات این نسخه صرفاً نمونه نمایشی هستند. در مرحله اتصال به پروژه، متن و مقادیر این بخش از اطلاعات ثبت‌شده برای همان سنگ خوانده خواهند شد.</p>
+            </div>
+        </section>
+
+        <!-- Full specifications -->
+        <section class="mt-6 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-custom-dark md:p-7">
+            <h2 class="border-b border-gray-200 pb-4 text-xl font-black text-gray-900 dark:border-gray-700 dark:text-white">مشخصات فنی</h2>
+            <dl class="mt-4 grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">نوع سنگ</dt><dd class="text-left font-semibold">مرمریت</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">نام تجاری</dt><dd class="text-left font-semibold">دهبید کرم</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">رنگ</dt><dd class="text-left font-semibold">کرم</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">ضخامت</dt><dd class="text-left font-semibold">۲ سانتی‌متر</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">معدن استخراج</dt><dd class="text-left font-semibold">دهبید</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">استان استخراج</dt><dd class="text-left font-semibold">فارس</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">نوع فرآوری</dt><dd class="text-left font-semibold">سابیده</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">درجه کیفیت</dt><dd class="text-left font-semibold">ممتاز</dd></div>
+                <div class="flex justify-between gap-4 border-b border-gray-100 py-3 dark:border-gray-800"><dt class="text-gray-500 dark:text-gray-400">واحد موجودی</dt><dd class="text-left font-semibold">متر مربع</dd></div>
+            </dl>
+        </section>
+
+        <!-- Inquiry form: visual only at this stage -->
+        <section id="inquiry" class="mt-6 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-custom-dark md:p-7">
+            <div class="max-w-3xl">
+                <h2 class="text-xl font-black text-gray-900 dark:text-white">استعلام از فروشنده</h2>
+                <p class="mt-2 text-sm leading-7 text-gray-500 dark:text-gray-400">برای دریافت اطلاعات دقیق درباره موجودی، سورت، هزینه حمل و زمان آماده‌سازی، درخواست خود را ثبت کنید. این فرم در نسخه فعلی نمایشی است و هنوز ارسال نمی‌شود.</p>
+                <form class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2" onsubmit="event.preventDefault(); alert('این فرم هنوز به بخش ثبت استعلام متصل نشده است.');">
+                    <div>
+                        <label for="inquiryName" class="mb-2 block text-sm font-semibold">نام و نام خانوادگی</label>
+                        <input id="inquiryName" name="name" type="text" required class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm outline-none focus:border-primary dark:border-gray-600 dark:bg-zinc-800" placeholder="نام شما">
+                    </div>
+                    <div>
+                        <label for="inquiryPhone" class="mb-2 block text-sm font-semibold">شماره تماس</label>
+                        <input id="inquiryPhone" name="phone" type="tel" required class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm outline-none focus:border-primary dark:border-gray-600 dark:bg-zinc-800" placeholder="شماره تماس شما">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="inquiryQuantity" class="mb-2 block text-sm font-semibold">مقدار موردنیاز</label>
+                        <input id="inquiryQuantity" name="quantity" type="text" class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm outline-none focus:border-primary dark:border-gray-600 dark:bg-zinc-800" placeholder="مثلاً ۱۲۰ متر مربع">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="inquiryMessage" class="mb-2 block text-sm font-semibold">توضیحات درخواست</label>
+                        <textarea id="inquiryMessage" name="message" rows="4" class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm outline-none focus:border-primary dark:border-gray-600 dark:bg-zinc-800" placeholder="سورت، ابعاد، محل تحویل یا سؤال‌های دیگر"></textarea>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <button type="submit" class="rounded-xl bg-primary px-6 py-3 font-bold text-white transition hover:bg-primary-600">ثبت نمایشی درخواست</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Related stones -->
+        <section class="mt-6 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-custom-dark md:p-7">
+            <div class="mb-4 flex items-center justify-between gap-3">
+                <h2 class="text-xl font-black text-gray-900 dark:text-white">سنگ‌های مشابه</h2>
+                <a href="/Stones" class="text-sm font-semibold text-primary hover:underline">مشاهده همه سنگ‌ها</a>
+            </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="flex h-36 items-center justify-center bg-gray-100 text-sm text-gray-500 dark:bg-zinc-800">تصویر سنگ</div>
+                    <div class="p-4"><h3 class="font-bold">مرمریت مشکی</h3><p class="mt-2 text-sm text-gray-500 dark:text-gray-400">مرمریت · رنگ تیره</p><a href="#" class="mt-3 inline-block text-sm font-bold text-primary">مشاهده جزئیات</a></div>
+                </article>
+                <article class="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="flex h-36 items-center justify-center bg-gray-100 text-sm text-gray-500 dark:bg-zinc-800">تصویر سنگ</div>
+                    <div class="p-4"><h3 class="font-bold">مرمریت دهبید روشن</h3><p class="mt-2 text-sm text-gray-500 dark:text-gray-400">مرمریت · رنگ روشن</p><a href="#" class="mt-3 inline-block text-sm font-bold text-primary">مشاهده جزئیات</a></div>
+                </article>
+                <article class="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="flex h-36 items-center justify-center bg-gray-100 text-sm text-gray-500 dark:bg-zinc-800">تصویر سنگ</div>
+                    <div class="p-4"><h3 class="font-bold">تراورتن کرم</h3><p class="mt-2 text-sm text-gray-500 dark:text-gray-400">تراورتن · رنگ کرم</p><a href="#" class="mt-3 inline-block text-sm font-bold text-primary">مشاهده جزئیات</a></div>
+                </article>
+                <article class="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="flex h-36 items-center justify-center bg-gray-100 text-sm text-gray-500 dark:bg-zinc-800">تصویر سنگ</div>
+                    <div class="p-4"><h3 class="font-bold">گرانیت طوسی</h3><p class="mt-2 text-sm text-gray-500 dark:text-gray-400">گرانیت · رنگ طوسی</p><a href="#" class="mt-3 inline-block text-sm font-bold text-primary">مشاهده جزئیات</a></div>
+                </article>
+            </div>
+        </section>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+﻿using Sangjoo.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sangjoo.Domain.RepositoryInterfaces
+{
+    public interface IImageRepository:IBaseRepository<Image>
+    {
+        Task<List<Image>> GetListOfImages();
+
+        Task AddImageToDataBase(Image image);
+
+        Task<Image?> GetAnImageByIdAsync(long imageId);
+
+        Task EditAnImage(Image image);
+
+        Task DeleteAnImage(Image image);
+        Task<List<Image>> GetImagesByProductIdAsync(long productId);
+        Task<Image?> GetAnImageByIdAndProductIdAsync(
+        long imageId,
+        long productId);
+    }
+}

@@ -1,9 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{8F07E4F2-1B95-4EA8-9AEC-A32FC7DFD883}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sangjoo.Presentation", "WebApplication1\Sangjoo.Presentation.csproj", "{8F07E4F2-1B95-4EA8-9AEC-A32FC7DFD883}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sangjoo.Presentation", "Sangjoo.Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sangjoo.Infrustructure", "Sangjoo.Infrustructure", "{0E40DFF7-0AE0-4336-AE73-FBE8C9E54517}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sangjoo.Domain", "Sangjoo.Domain", "{724C11B4-106C-49FA-B3A4-BE591941D2E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sangjoo.Application", "Sangjoo.Application", "{6BE1235D-80CD-4EAF-9755-BBEFBC53E50A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sangjoo.Infrustructure", "Sangjoo.Infrustructure\Sangjoo.Infrustructure.csproj", "{9191CDD1-E192-4482-ADA7-594CC76032FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sangjoo.Domain", "Sangjoo.Domain\Sangjoo.Domain.csproj", "{BB73B4A3-83B8-460F-A35E-B398380AF805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sangjoo.Application", "Sangjoo.Application\Sangjoo.Application.csproj", "{F2807E73-E85D-4694-90B7-D73999B68AC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,27 @@ Global
 		{8F07E4F2-1B95-4EA8-9AEC-A32FC7DFD883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F07E4F2-1B95-4EA8-9AEC-A32FC7DFD883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F07E4F2-1B95-4EA8-9AEC-A32FC7DFD883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9191CDD1-E192-4482-ADA7-594CC76032FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9191CDD1-E192-4482-ADA7-594CC76032FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9191CDD1-E192-4482-ADA7-594CC76032FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9191CDD1-E192-4482-ADA7-594CC76032FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB73B4A3-83B8-460F-A35E-B398380AF805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB73B4A3-83B8-460F-A35E-B398380AF805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB73B4A3-83B8-460F-A35E-B398380AF805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB73B4A3-83B8-460F-A35E-B398380AF805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2807E73-E85D-4694-90B7-D73999B68AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2807E73-E85D-4694-90B7-D73999B68AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2807E73-E85D-4694-90B7-D73999B68AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2807E73-E85D-4694-90B7-D73999B68AC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F07E4F2-1B95-4EA8-9AEC-A32FC7DFD883} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9191CDD1-E192-4482-ADA7-594CC76032FC} = {0E40DFF7-0AE0-4336-AE73-FBE8C9E54517}
+		{BB73B4A3-83B8-460F-A35E-B398380AF805} = {724C11B4-106C-49FA-B3A4-BE591941D2E8}
+		{F2807E73-E85D-4694-90B7-D73999B68AC4} = {6BE1235D-80CD-4EAF-9755-BBEFBC53E50A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F3FAD15-A3F2-4AEF-8688-06842E8086BF}

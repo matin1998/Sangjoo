@@ -1,0 +1,20 @@
+﻿using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sangjoo.Domain.Entities;
+
+public class ApplicationUser : IdentityUser<long>
+{
+    public string FullName { get; set; }
+    public DateTime RegisterDate { get; set; } = DateTime.UtcNow;
+    public bool IsActive { get; set; } = true;
+    public ICollection<Address> Addresses { get; set; }
+    = new List<Address>();
+    public Cart Cart { get; set; }
+    public Seller? Seller { get; set; }
+}
+
